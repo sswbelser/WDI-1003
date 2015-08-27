@@ -1,9 +1,9 @@
-angular.module('resourceApp', ['ngRoute', 'ngResource', 'mainController'])
+angular.module('bookApp', ['ngRoute', 'ngResource', 'booksCtrl'])
 
 .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$routeProvider.when('/', {
 		templateUrl: 'templates/main.html',
-		controller: 'MainCtrl'
+		controller: 'booksCtrl'
 	});
 
 	// use the HTML5 History API
